@@ -36,9 +36,9 @@ if ($currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administ
   $cred=Get-Credential $env:username
 
   if ($cred) {
-      Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/fireeye/flare-vm/master/flarevm_malware.ps1 -Credential $cred
+      Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/pyllyukko/flare-vm/pyllyukko/flarevm_malware.ps1 -Credential $cred
   } else {
-      Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/fireeye/flare-vm/master/flarevm_malware.ps1
+      Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/pyllyukko/flare-vm/pyllyukko/flarevm_malware.ps1
   }
 
 } else {
